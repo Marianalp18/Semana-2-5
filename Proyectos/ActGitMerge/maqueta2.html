@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Maqueta 2</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Lucida Console;
+            padding: 20px;
+            background: #ce810d;
+        }
+
+        .header {
+            padding: 5px;
+            text-align: center;
+            background: #cc4949;
+        }
+
+        .header h1 {
+            font-size: 50px;
+            color: rgb(22, 134, 134);
+        }
+
+        .header p {
+            color: #fff;
+        }
+
+        .topnav {
+            overflow: hidden;
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            line-height: 40px;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .topnav a:hover {
+            background-color: rgb(41, 180, 36);
+            color: #fff;
+        }
+
+        .leftcolumn {
+            float: left;
+            width: 75%;
+            background-color: #0d3f86;
+        }
+
+        .rightcolumn {
+            float: left;
+            width: 25%;
+            background-color: #4980cc;
+            padding-left: 20px;
+        }
+
+        .fakeimg {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: rgb(57, 45, 121);
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both
+        }
+
+        .footer {
+            padding: 20px;
+            background: rgb(128, 6, 6);
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 800px) {
+
+            .leftcolumn,
+            .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="header">
+        <h1>que lindo es navegar</h1>
+        <h1>Ejemplo de navegación2.0</h1>
+        <p>Esta es una buena opcion para diseño</p>
+    </div>
+    <div class="topnav">
+        <a href="#">opción 1</a>
+        <a href="#">opción 2</a>
+        <a href="#">opción 3</a>
+        <a href="#" style="float: right">Salir</a>
+    </div>
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>Cabezamiento de la rama derecha</h2>
+                <h5>Descripción del tema, fecha:</h5>
+                <div class="fakeimg" style="height: 200px;">Imagen</div>
+                <p>MUCHO TEXTO </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis fugit quaerat, totam pariatur repellendus incidunt qui eveniet quis dolorum impedit quam porro delectus suscipit id alias reprehenderit nemo, officiis ducimus!</p>
+            </div>
+             <div class="card">
+                 <!--quité las líneas 123 y 124 xd-->
+                <div class="fakeimg" style="height: 200px;">Imagen</div>
+                <p>algo de texto...</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis fugit quaerat, totam pariatur repellendus incidunt qui eveniet quis dolorum impedit quam porro delectus suscipit id alias reprehenderit nemo, officiis ducimus!</p>
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+               <h2> 
+                   <strong>
+                       Encabezado de columna derecha
+                   </strong>
+                </h2>
+                <h5>Descripción del tema, fecha:</h5>
+                <div class="fakeimg" style="height: 200px;">Imagen</div>
+                <p>algo de texto...</p>
+                <p>oWo</p> 
+                <p>uwu</p> 
+            </div>
+            <div class="card">
+                <h3>otros enlaces</h3>
+            <div class="fakeimg">
+                <p>imágen 1</p>
+            </div>
+             <div class="fakeimg">
+                <p>si imagen</p>
+            </div>
+             <div class="fakeimg">
+                <p>no imagen </p>
+            </div>
+            </div>
+            <div class="card">
+                <h3> Sigueme en...</h3>
+                <p>texto e iconos</p>
+            </div>
+        </div>
+        </div>
+        <div class="footer">
+              <h2>pie de página</h2>
+    </div>
+</body>
+</html>
