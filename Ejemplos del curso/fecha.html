@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+</head>
+<body>
+    <form action="./dinamicx/fecha.php" method="post">
+        <fieldset>
+            <legend>Introduce tu busqueda a la torre de babel</legend>
+            <label for="buscar">Taxto a buscar</label>
+            <input type="text" id="buscar" name="buscar">
+            <br/><br/>
+
+            <label for ="timezone">Zona horaria de tu preferencia:</label>
+            <select type="horario" name="horario">
+                <option value="America/New_York">America/New_York</option>
+                <option value="America/Mexico_City">America/Mexico_City</option>
+                <option value="Asia/Tokyo">Asia/Tokyo</option>
+                <option value="Australia/Sydney">Australia/Sydney</option>
+                <option value="Asia/Hong_Kong">Asia/Hong_kong</option>
+            </select>
+            <br/><br/>
+
+            <label for="modo">Modo</label>
+            <select type="modo" name="modo">
+                <option value="Normal">Normal</option>
+                <option value="Orden">Orden</option>
+                <option Value="palabra">Palabra</option>
+            </select>
+            <br/><br/>
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar formulario</button>
+
+        </fieldset>
+    </form>
+</body>
+</html>
