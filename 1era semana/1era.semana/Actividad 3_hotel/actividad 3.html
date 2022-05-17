@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 3</title>
+    <link rel="icon" href="./CW-2022-LOGO.jpg" type="imagen/jpg">
+</head>
+<body>
+    <body bgcolor="#9FD5D1">
+        <h1><font face="Verdana">"Hotel Cristal"</font></h1>
+        <h2>Bienvenido a este su paraiso en el hotel Cristal.</h2>
+        <img src="hotel.jpg"  alt="yo" width="370">
+        <h3>Un hotel de 5 estrellas y de gran calidad para pasar bellos momentos familiares.</h3>
+    <form>
+        <fieldset>
+            <legend><strong>Datos de la reserva:</strong></legend>
+            <label for="nombre">Nombre(s):</label>
+            <input type="text" id="nombre" name="nombre"><br><br>
+
+            <label for_="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos"><br><br>
+
+            <label for="Correo">Correo:</label>
+            <input type="email" id="Correo" required><br><br>
+
+            <label type="number">Edad:</label>
+            <input for="edad" id="edad" required><br><br>
+
+            <label for="text">Fecha</label>
+            <input type="date" id="text" name="text"><br><br>
+
+            <label type="number">Numero de teléfono:</label>
+            <input for="numero" id="numero"><br><br>
+            
+            <label for="cama">Tipo de cama:</label>
+            <select>
+                <option>-</option>
+                <option>Litera</option>
+                <option>Sofá cama</option>
+                <option>Cuna</option>
+                <option>Otro</option>
+            </select><br><br>
+
+            <p>
+            Seleciona los lugares de preferencia de tu habitación:<br>
+                <input type="checkbox" name="pd" value="habitacion"> Planta baja<br>
+                <input type="checkbox" name="p1" value="habitacion"> Piso 1<br>
+                <input type="checkbox" name="p2" value="habitacion"> Piso 2<br>
+                <input type="checkbox" name="p3" value="habitacion"> Piso 3<br>
+                <input type="checkbox" name="vip" value="habitacion"> Habitación VIP<br>
+            </p>
+
+            <label>Comentarios adicionales</label><br>
+            <textarea name="descripcion" rows="10" cols="40" required></textarea><br>
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+        </fieldset>
+    </form>
+</body>
+</html>

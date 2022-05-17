@@ -1,0 +1,36 @@
+body{
+    background-color: #e21919;
+}
+#contenido{
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    left: auto;
+    top: auto;
+    margin-bottom: 2cm;
+}
+#añadir{
+    height: 3em;
+    border-radius: 1.5em;;
+    width: 3em;
+    font-size: larger;
+    font-weight: bold;
+    border-color: #10da27;
+    background-color: #10da27;
+}
+#pokemon{
+    width: 18cm;
+    height: 1.5cm;
+    font-size: large;
+}
+#imagen{
+    width: 50%;
+    height: 50%;
+}
+#form{
+    justify-content: center;
+    background-color: aliceblue;
+    position: absolute;
+    left: 22cm;
+    top: 13cm;
+}

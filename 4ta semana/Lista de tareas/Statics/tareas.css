@@ -1,0 +1,57 @@
+body{
+    background-color: #006E7F;
+}
+#forms{
+    border-color: #006E7F;
+    background-color: #F8CB2E;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    top:150px;
+    left:575px;
+    width: 400px;
+    height: auto;
+    margin: auto;
+    border-style: solid;
+    border-radius:10px 10px 10px 10px;
+}
+#añadir{
+    color: aliceblue;
+    border-style: solid;
+    width: 100px;
+    height: 30px;
+    border-radius:10px 10px 10px 10px;
+    border-color: #B22727;
+    background-color: #B22727;
+}
+#listar{
+    text-align:justify;
+    color:aliceblue;
+    border-style: solid;
+    margin: auto;
+    top:auto;
+    left:auto;
+    width: auto;
+    height: auto;
+    border-radius:10px 10px 10px 10px;
+    border-color: #FF6363;
+    background-color: #FF6363;
+}
+.boton{
+    color: aliceblue;
+    border-style: solid;
+    width: auto;
+    height: 20px;
+    border-radius:10px 10px 10px 10px;
+    border-color: #1A3C40;
+    background-color: #1A3C40;
+}
+.marcar{
+    color: aliceblue;
+    border-style: solid;
+    width: auto;
+    height: 20px;
+    border-radius:10px 10px 10px 10px;
+    border-color: #1A3C40;
+    background-color: #1A3C40;
+}
