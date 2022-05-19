@@ -6,12 +6,11 @@ body{
     background-color: #F8CB2E;
     justify-content: center;
     text-align: center;
-    position: absolute;
-    top:150px;
-    left:575px;
-    width: 400px;
+    position: relative;
+    top:100px;
+    left:400px;
+    width: 450px;
     height: auto;
-    margin: auto;
     border-style: solid;
     border-radius:10px 10px 10px 10px;
 }
@@ -24,19 +23,32 @@ body{
     border-color: #B22727;
     background-color: #B22727;
 }
-#listar{
+#lista{
+    margin: 5%;
+    position: relative;
+}
+.linea{
+    position: relative;
     text-align:justify;
     color:aliceblue;
     border-style: solid;
+    justify-content: center;
+    right:10% ;
     margin: auto;
     top:auto;
-    left:auto;
+    left:-3%;
     width: auto;
     height: auto;
     border-radius:10px 10px 10px 10px;
     border-color: #FF6363;
     background-color: #FF6363;
 }
+.acabado{
+    position: relative;
+    border-color: #E78EA9;
+    background-color: #E78EA9;
+}
+
 .boton{
     color: aliceblue;
     border-style: solid;
