@@ -9,11 +9,9 @@
 </head>
 <body>
     <div id="forms">
-    <!-- <form> -->
         <h1><strong>Lista de tareas</strong></h1>
 
-        <label for="input"></label>
-        <input type="text" id="tarea" name="tarea" placeholder="Tarea:">
+        <label for="input"><input type="text" id="tarea" name="tarea" placeholder="Tarea:"></label>
         </br></br>
 
         <label  for="materia"></label>
@@ -22,13 +20,13 @@
             <option value="Historia">Historia</option>
             <option value="Español">Español</option>
             <option value="Quimica">Quimica</option>
-            <option value="Otro" id="otro">Otra materia</option>
+            <option value="Otro">Otra materia</option>
         </select><br><br>
-
         <button id="añadir">Añadir tarea</button>
+        <br><br>
+        <label for="agregar"><input type="text" name="agregar" id="agregar"></label>
+        <br><br>
         <ul id="lista"></ul>
-
-    <!-- </form> -->
 </div>
 <script src="./dynamics/tareas.js"></script>
 </body>

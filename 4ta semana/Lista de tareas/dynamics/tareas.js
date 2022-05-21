@@ -3,14 +3,14 @@ const tarea = document.getElementById("tarea");
 const lista = document.getElementById("lista");
 const botones = document.getElementsByClassName("boton");
 const materia = document.getElementById("materia"); 
-
 const otro = document.getElementById("otro");
-const cuadro = document.getElementsByClassName("cuadro");
-// const marcar = document.getElementsByClassName("marcar");
+const agregar = document.getElementById("agregar");
+const materiaNueva = document.getElementById("materiaNueva");
 
 añadir.addEventListener("click", () => {
-    lista.innerHTML += '<li class="linea"> <button class="marcar">Marcar como completada</button>'+
-    ' '+'<button class="boton">Eliminar</button>' + '<p>' + materia.value + ': ' + tarea.value + '</p>' + '</li>' + '</br>';
+    lista.innerHTML += '<li class="linea"> <button class="marcar">Marcar como completada</button>'+' '+'<button class="boton">Eliminar</button>' + '<h3>' + materia.value + ': ' + tarea.value + '</h3>' + '</li>';
+    materia.innerHTML += '<option>' + agregar.value + '</option>';
+    console.log('hola, buenas tardes');
 });
 
 lista.addEventListener("click", (evento) => {
@@ -20,6 +20,15 @@ lista.addEventListener("click", (evento) => {
     else if(evento.target.className == 'marcar'){
       evento.target.parentElement.classList.toggle("acabado");
     }
-});
+}); 
 
+agregar.style.display = 'none';
+materia.addEventListener("change", (evento) => {
+    if(evento.target.value === 'Otro'){
+      agregar.style.display = 'inline';
+    }
+    else if(evento.target.value !== 'Otro'){
+        agregar.style.display = 'none';
+    }
+});
 
