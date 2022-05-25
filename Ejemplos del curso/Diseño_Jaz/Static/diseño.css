@@ -1,0 +1,33 @@
+/* #inline{
+    display: inline;
+    background-color: rgb(5, 77, 80);
+}
+#block{
+    display: block;
+    background-color: violet;
+}
+#none{
+    display: none;
+    background-color: rgb(208, 120, 12);
+}
+#inline-block{
+    display: inline-block;
+    background-color: teal;
+    width: 200px;
+    height: 100px;
+}
+#span{
+    background-color: cadetblue;
+    width: 100px;
+} */
+
+.cajia-Flex{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.caja{
+    width: 100px;
+    height: 100px;
+    background-color:blue;
+    margin: 5px;
+}

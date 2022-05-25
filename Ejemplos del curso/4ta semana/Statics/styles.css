@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(252, 253, 252));
+}
+#padre{
+    background-color: brown;
+    width: 200px;
+    height: 200px;
+}
+#hijo{
+    background-color: rgb(196, 255, 204);
+    width: 100px;
+    height: 100px;
+}
+#tarjeta{
+    background-color: gray;
+}
+#sub{
+    background-color: red;
+}
+.linea{
+    background-color: aquamarine;
+}
+.acabado{
+    background-color: brown;
+}
