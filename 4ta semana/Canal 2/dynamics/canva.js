@@ -1,19 +1,18 @@
 const numero = document.getElementById("numero");//define el numero de picos
 const volumen = document.getElementById("volumen");//el radio del centro
-const rellenar = document.getElementById("rellenar");//con color
-var color = document.getElementById("color");//color
+
+//const rellenar;//con color
+const color = document.getElementById("color");//color
 const canvas = document.getElementById("picos");
 const ctx = canvas.getContext("2d");
 
+var aumentar = numero.value;
 let cx;
 let cy;
 
 let PriRadio = 95;
 let SegRadio = 125;
-let numPunt = 60;//numero de picos
-// numero.oninput = function(){
-//     numPunt.innerHTML = numero.value;
-// };
+let numPunt = 'aumentar';
 let f;
 
 function estrella(){
@@ -23,10 +22,25 @@ function estrella(){
     let x;
     let y;
 
-    ctx.lineWidth = 1;//grosor
-
-    ctx.strokeStyle +=color.value;//color
-
+    ctx.lineWidth = 5;//grosor
+//intento de hacer color
+    var head;
+    var defaultColor = "#e66465";
+    window.addEventListener("load", startup, false);
+    function startup(){
+        head = document.querySelector("color");
+        head.value = defaultColor;
+        head.addEventListener("input", updateFirst, false);
+        head.addEventListener("change", updateAll, false);
+        head.Select();
+    }
+    function updateFirst(event){
+        var ctx = document.querySelector("ctx");
+        if(ctx){
+            ctx.strokeStyle = event.target.value;
+        }
+    }
+//
     ctx.beginPath();
 
     for (let i = 0; i<numPunt; i++){
@@ -43,9 +57,16 @@ function estrella(){
 
         ctx.lineTo(x, y);
     }
-    ctx.closePath();
+    rellenar = document.getElementById("rellenar");
+    rellenar.addEventListener('change', (event) => {
+        if(event.target.checked){
+            ctx.stroke();
+        }else{
+            ctx.fill();
+        }
+    })
 
-    ctx.fill();//rellenar area
+    ctx.closePath();
 }
     window.onload = function(){
         f = (Math.PI *2) / numPunt;
