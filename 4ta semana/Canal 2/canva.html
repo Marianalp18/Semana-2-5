@@ -4,24 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./Statics/canva.css" rel="stylesheet">
 </head>
 <body>
-    <canvas id="picos" width="450" height="450"></canvas>
-    <script src="./canva.js"></script>
-
-    
-        <div>
-            <input type="range" id="volume" name="volume">
-            <label for="volume">Picudo:</label>
+    <div id="estrella">
+        <canvas id="picos" width="250px" height="250px"></canvas>
+        <div id="contenedor">
+            <label for="numero">Número de picos:
+            <input type="number" id="numero" name="numero">
+            </label>
+            <br/>
+            <label for="volumen">Picudo:
+            <input type="range" id="volumen" name="volumen">
+            </label>
+            <br/>
+            <label for="head">Color de la estrella:
+            <input type="color" id="color" name="head" value="#e66465">
+            </label>
+            <br/>
+            <label for="rellenar">
+            <input type="checkbox" id="rellenar" name="rellenar">
+            Rellenar estrella</label>
         </div>
-
-        <div>
-            <input type="color" id="head" name="head" value="#e66465">
-            <label for="head">Color de la estrella:</label>
-        </div>
-        <div>
-            <input type="checkbox" id="rellenar" name=""
-        </div>
-
+    </div>
+    <script src="./dynamics/canva.js"></script>
 </body>
 </html>
