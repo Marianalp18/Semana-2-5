@@ -18,15 +18,15 @@ body{
     text-align:center;
     width: 150px;
     height: 60px;
-    top: 19%;
+    top: 22%;
     left: 20%;
 }
 #cont_botones{
     position: absolute;
     display: flex;
     justify-content: center;
-    top: 50%;
-    left: 10%;
+    top: 55%;
+    left: 22%;
 }
 #iniciar{
     margin: 3%;
@@ -46,15 +46,5 @@ body{
     font-weight:bold;
     width: 6em;
     height: 4em;
-    border-radius:100%;
-}
-#reiniciar{
-    margin: 3%;
-    border: none;
-    background-color: rgb(173, 65, 18);  
-    color: aliceblue;
-    font-weight:bold;
-    width: 6em;
-    height: 6em;
     border-radius:100%;
 }
