@@ -6,44 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./statics/tem.css">
-    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js "></script>
 </head>
 <body>
-    <div id="contenedor">
-        <div id="temporizador">
-            <span id="contador"></span>
-        </div>
-        <div id="cont_botones">
-            <button id ="empezar">Iniciar</button>
-            <button id="terminar">Pausar</button>
+<div id="contenedor">
+    <div id="temporizador">
+        <span class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" onclick="mostrar();" id="contador" class="insertar">00:00</span>
+    </div>
+    <!-- Modal -->
+    <div class="modal-fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Modal</h5>
+                </div>
+                <div class="modal-body">
+                <!-- define el usuario el tiempo -->
+                    <label for="min">Minutos</label>
+                    <input type="number" max="59" min="00" id="min" class="determinas">
+                    <label for="seg">Segundos</label>
+                    <input type="number" max="59" min="00" id="seg" class="determinas">
+                </div>
+                <div class="modal-segundo">
+                    <button onclick="ocultar();" class="btn btn-primary" data-bs-dismiss="modal" id="boton">Aceptar</button>
+                </div>
+            </div>
         </div>
     </div>
-    Button trigger modal
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-        Launch static backdrop modal
-      </button>
-      
-      <!-- Modal -->
-      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p>Minutos: </p>
-                <input type="number" max="59" min="00" id="minutos" class="determinas">
-                <p>Segundos: </p>
-                <input type="number" max="59" min="00" id="segundos" class="determinas">
-            </div>
-            <div class="modal-segundo">
-                <cutton type="button" class="btn btn-primary" data-bs-dismiss="modal" id="boton">Aceptar</cutton>
-            </div>
-    
-            
-            </div>
-        </div>
+<!-- botones -->
+    <div id="cont_botones">
+        <button id ="empezar">Empezar</button>
+        <button id="terminar" onclick="pausar();"> ⬛ </button>
+    </div>
+</div>
+<script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js "></script>
     <script src="./dynamics/index.js"></script>
 </body>
 </html>

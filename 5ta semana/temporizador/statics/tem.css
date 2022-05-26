@@ -9,7 +9,7 @@ body{
     justify-content: center;
     position: relative;
     top:175px;
-    left:39%;
+    left:35%
 }
 #temporizador{
     position: absolute;
@@ -49,4 +49,18 @@ body{
     height: 4em;
     border-radius:100%;
     cursor: pointer;
+}
+#staticBackdrop{
+    position:absolute;
+    top:-175px;
+    left:auto;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    margin: .3cm;
+    border-radius:10px 10px 10px 10px;
+    display: none;
+}
+#boton{
+    margin:5%;
 }
