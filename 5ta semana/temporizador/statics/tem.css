@@ -28,7 +28,7 @@ body{
     top: 55%;
     left: 22%;
 }
-#iniciar{
+#empezar{
     margin: 3%;
     border: none;
     background-color: rgb(234, 176, 60);
@@ -37,6 +37,7 @@ body{
     width: 6em;
     height: 4em;
     border-radius:100%;
+    cursor: pointer;
 }
 #terminar{
     margin: 3%;
@@ -47,4 +48,5 @@ body{
     width: 6em;
     height: 4em;
     border-radius:100%;
+    cursor: pointer;
 }
