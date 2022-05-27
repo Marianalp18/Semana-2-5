@@ -11,9 +11,9 @@
 <body>
 <div id="contenedor">
     <div id="temporizador" onclick="mostrar();">
-        <span data-bs-toggle="modal" id="minutos" class="insertar"></span>
+        <span data-bs-toggle="modal" id="minutosP" class="insertar"></span>
         <span data-bs-toggle="modal" id="puntitos" class="insertar">:</span>
-        <span data-bs-toggle="modal" id="segundos" class="insertar"></span>
+        <span data-bs-toggle="modal" id="segundosP" class="insertar"></span>
     </div>
     <!-- Modal -->
     <div class="modal-fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -25,10 +25,10 @@
                 </div>
                 <div class="modal-body">
                 <!-- define el usuario el tiempo -->
-                    <label for="min">Minutos</label>
+                    <label for="number">Minutos</label>
                     <input type="number" max="59" min="00" id="min" class="determinas">
-                    <label for="seg">Segundos</label>
-                    <input type="number" max="59" min="00" id="seg" class="determinas" value="00">
+                    <label for="number">Segundos</label>
+                    <input type="number" max="59" min="00" id="seg" class="determinas">
                 </div>
                 <div class="modal-segundo">
                     <button onclick="ocultar();" class="btn btn-primary" data-bs-dismiss="modal" id="boton">Aceptar</button>
