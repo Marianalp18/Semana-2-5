@@ -11,15 +11,15 @@ body{
     top:175px;
     left:35%
 }
-#contador{
+#temporizador{
     position: absolute;
-    font-size: 2cm;
-    border-radius:100px 100px 100px 100px;
-    text-align:center;
-    width: 150px;
-    height: 60px;
+    font-size: 1.5cm;
+    border-radius: 100px 100px 100px 100px;
+    text-align: center;
+    width: 190px;
+    height: 100px;
     top: 20%;
-    left: 20%;
+    left: 17%;
 }
 #cont_botones{
     position: absolute;
