@@ -1,5 +1,5 @@
 const añadir = document.getElementById("añadir");
-const tarea = document.getElementById("tarea");
+const tarea = document.getElementById("tarea");//input
 const lista = document.getElementById("lista");
 const botones = document.getElementsByClassName("boton");
 const materia = document.getElementById("materia"); 
